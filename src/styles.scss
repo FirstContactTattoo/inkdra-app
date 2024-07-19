@@ -1,0 +1,19 @@
+@use '@angular/material' as mat;
+
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/inkdra-material.scss';
+/* main variables */
+@import './assets/scss/colors';
+@import './assets/scss/fonts';
+
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/utilities"; // Configures the utility classes that should be generated

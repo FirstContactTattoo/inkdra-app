@@ -1,0 +1,25 @@
+@use 'angular/material' as mat;
+
+@import 'colors';
+@import 'fonts';
+
+@include mat.core();
+
+$inkdra-primary: mat.define-palette($md-inkdra-primary, 900);
+$inkdra-accent: mat.define-palette($md-inkdra-accent, 700);
+$inkdra-warn: mat.define-palette($md-inkdra-warn, 900);
+
+$inkdra-theme: mat.define-light-theme((
+  color: (
+    primary: $inkdra-primary,
+    accent: $inkdra-accent,
+    warn: $inkdra-warn,
+  ),
+  typography: mat.define-typography-config(
+    $font-family: 'Lato-Regular, sans-serif',
+    $headline-1: mat.define-typography-level(72px, 28px, 300),
+    $body-1: mat.define-typography-level(14px, 20px, 400)
+  )
+));
+@include mat.all-component-themes($inkdra-theme);
+
